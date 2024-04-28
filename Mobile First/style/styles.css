@@ -1,4 +1,5 @@
 *{
+    max-width: 414px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -175,17 +176,6 @@ header{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .header-style__info{
     width: 300px;
 
@@ -308,6 +298,9 @@ header{
 
 @media screen and (max-width: 1440px) and (orientation:landscape) {
 
+    *{
+        max-width: 1440px;
+    }
 
     header{
         margin: 0%;
