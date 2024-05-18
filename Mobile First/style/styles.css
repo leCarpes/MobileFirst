@@ -1,5 +1,5 @@
 *{
-    /* max-width: 414px; */
+    max-width: 414px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -71,7 +71,8 @@ header{
 
 .header-style__links{
     background-color: var(--backgroundColorCards);
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
     top: 70px;
     left: 0;
     height: 100vh;
@@ -128,18 +129,21 @@ header{
     border: none;
 }
 
+
 .header-style__links2{
     background-color: var(--backgroundColorCards);
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
     top: 70px;
     right: 0;
     height: 100vh;
     width: 70%;
 
-    /* propriedades para realizar a animação dos links */
-    transform: translateX(+100%);
+    /* propriedades para realizar a animação dos links*/
+    transform: translateX(100%);
     transition: all 0.5s ease;
     display: block;
+    /*z-index:999;*/
     
 } 
 
@@ -160,9 +164,6 @@ header{
     background-color: var(--backgroundColorCards);
 
 }
-
-
-
 
 .header-style__links2>ul>li>a{
     text-decoration: none;
@@ -208,6 +209,9 @@ header{
     background-color: #6C63FF;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 
